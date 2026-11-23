@@ -1,0 +1,17 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "primal-cut",
+  "compatibility_date": "2026-06-06",
+  // nodejs_compat：让 nitro 把 node: 内建外部化到原生运行时。图像处理（jimp、png2icons）全在浏览器端，服务端只有 SEO 路由。
+  "compatibility_flags": ["nodejs_compat"],
+  // 2026-11-24 从腾讯 EdgeOne 迁为原短名 Worker：沿用 cloudflare_pages preset 的产物——dist/_worker.js 是标准模块 Worker
+  // （fetch(request, env, ctx) + env.ASSETS），静态资源由 Workers Assets 以同名 ASSETS 绑定提供；
+  // public/.assetsignore 排除 _worker.js / _routes.json，服务端代码不会作为静态资源公开。
+  // 不写 routes：primal-cut.if9.cool 由 if9-edge 经 Service Binding 回源。
+  "main": "dist/_worker.js/index.js",
+  "assets": { "directory": "dist", "binding": "ASSETS" },
+  "workers_dev": false,
+  "preview_urls": false,
+  "version_metadata": { "binding": "CF_VERSION_METADATA" },
+  "observability": { "enabled": true }
+}

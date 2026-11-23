@@ -1,0 +1,261 @@
+{
+  "brand": {
+    "name": "PrimalCut",
+    "latin": "PrimalCut",
+    "tagline": "Lokaler Konverter von PNG zu macOS-.icns und mehrskaligen PNG-Sets",
+    "byline": "Von if9"
+  },
+  "nav": {
+    "homeAria": "PrimalCut Startseite",
+    "mainAria": "Hauptnavigation",
+    "backHome": "Startseite",
+    "vsCompare": "vs. iconutil / Image2icon",
+    "openWorkbench": "Arbeitsbereich öffnen",
+    "backToSite": "Produktseite",
+    "langMenuLabel": "Sprache wechseln",
+    "settings": "Werkzeug-Einstellungen"
+  },
+  "tool": {
+    "dropTitle": "PNG-Datei hier ablegen oder auswählen",
+    "dropSubtitle": "Nur PNG-Dateien bis {maxMb} MB, vollständige Verarbeitung lokal im Browser",
+    "errorNotPng": "Bitte laden Sie eine gültige PNG-Bilddatei (.png) hoch",
+    "errorTooLarge": "Die Datei überschreitet das Limit von {maxMb} MB. Bitte komprimieren und erneut versuchen.",
+    "errorIcnsFailed": "ICNS-Erstellung fehlgeschlagen. Bitte prüfen Sie, ob die PNG-Datei intakt ist.",
+    "errorConvertFailed": "Konvertierung fehlgeschlagen. Bitte versuchen Sie es mit einer anderen PNG-Datei.",
+    "clearFile": "Aktuelles Bild entfernen",
+    "renameLabel": "Präfix des Ausgabedateinamens",
+    "renamePlaceholder": "Dateinamen für den Export eingeben (ohne Endung)",
+    "editNameAria": "Ausgabedateinamen bearbeiten",
+    "fileMeta": "{width} × {height} px · {kb} KB",
+    "selectedFileCount": "{count} PNG-Quelldateien geladen",
+    "selectedFileCountOne": "{count} PNG-Quelldatei geladen",
+    "formatLabel": "Ausgabeformat wählen",
+    "formatIcnsTitle": "ICNS",
+    "formatIcnsDesc": "macOS-.icns-App-Icon-Paket",
+    "formatPngTitle": "PNG Set",
+    "formatPngDesc": "Mehrskalige PNGs als ZIP-Archiv",
+    "optionsToggle": "Zuschnitt- & Exportoptionen",
+    "roundedCorners": "macOS-Eckenabrundung",
+    "roundedCornersHint": "22,37 % Standard-Eckenmaske",
+    "safePadding": "120-px-Schutzabstand",
+    "safePaddingHint": "1264 × 1264 Rasterabstand",
+    "pngPresetLabel": "PNG-Größenvorgabe",
+    "presetExtension": "Browser-Erweiterung (Original + 16 / 48 / 128 px)",
+    "presetMacApp": "macOS-AppIcon-Satz (16 / 32 / 64 / 128 / 256 / 512 / 1024 px)",
+    "pngSizeCount": "Packt {count} PNG-Dateien",
+    "pngSizeCountOne": "Packt {count} PNG-Datei",
+    "specTagsTitle": "Zielgrößen",
+    "viewGrid": "Rasteransicht",
+    "viewList": "Listenansicht",
+    "convertButton": "Konvertieren & herunterladen",
+    "convertingButton": "Wird lokal konvertiert…",
+    "recentTitle": "Exportverlauf dieser Sitzung",
+    "queuedCount": "{count} Icon-Pakete exportiert",
+    "queuedCountOne": "{count} Icon-Paket exportiert",
+    "clearHistory": "Verlauf leeren",
+    "localPrivacyNote": "Bilder werden ausschließlich lokal über Browser-Canvas und Arbeitsspeicher verarbeitet – kein Server-Upload."
+  },
+  "settings": {
+    "title": "Werkzeug-Einstellungen",
+    "subtitle": "Sprache des Arbeitsbereichs und Standardparameter für den Zuschnitt festlegen",
+    "languageLabel": "Sprache des Arbeitsbereichs",
+    "languageAuto": "Systemsprache folgen",
+    "languageHint": "Bei „Systemsprache folgen“ richtet sich PrimalCut nach Ihrem Browser und fällt für nicht unterstützte Sprachen auf English zurück. Öffentliche Seiten folgen dem URL-Pfad.",
+    "defaultsTitle": "Standard-Ausgabeparameter",
+    "close": "Fertig"
+  },
+  "landing": {
+    "metaTitle": "PrimalCut — Kostenloser lokaler PNG-zu-macOS-.icns-Konverter",
+    "metaDescription": "Konvertieren Sie PNG-Bilder direkt im Browser in standardkonforme macOS-.icns-Pakete oder mehrskalige PNG-ZIP-Archive. Mit 22,37 % Rundung, 120-px-Randabstand und bikubischer Skalierung ohne Upload.",
+    "heroBadge": "100 % lokal · Keine Installation · Kein Upload",
+    "heroTitle": "Präziser Konverter für macOS-.icns und mehrskalige Icons",
+    "heroSubtitle": "Legen Sie eine hochauflösende PNG-Datei ab und exportieren Sie in Sekunden ein sauber abgerundetes .icns-Paket oder ein PNG-Größenset – vollständig lokal im Browser.",
+    "privacyBadge": "Browser-Canvas + png2icons-Engine",
+    "specsTitle": "Abgestimmt auf macOS-Desktop-Proportionen",
+    "specsLead": "Verwandeln Sie quadratische Grafiken oder App-Screenshots direkt in fertige Icons für Finder-Informationen, Xcode, Electron oder Tauri.",
+    "specs": [
+      {
+        "tag": "Schutzabstand",
+        "title": "1264 × 1264 Raster-Randabstand",
+        "desc": "Skaliert Ihr Motiv auf 1024 × 1024 innerhalb einer 1264 × 1264 Arbeitsfläche mit 120 px transparentem Rand je Seite für ein harmonisches Gewicht im Dock."
+      },
+      {
+        "tag": "Eckenmaske",
+        "title": "22,37 % macOS-Eckenradius",
+        "desc": "Verwendet destination-in Alpha-Compositing für glatte 22,37 %-Rundungen ohne dunkle Anti-Aliasing-Säume."
+      },
+      {
+        "tag": "Bikubische Skalierung",
+        "title": "Mehrskalige .icns-Ausgabe",
+        "desc": "Führt png2icons mit bikubischer Interpolation direkt im Arbeitsspeicher aus und bündelt Retina- sowie Standardauflösungen."
+      },
+      {
+        "tag": "PNG-ZIP-Satz",
+        "title": "Vorgaben für Extensions & AppIcons",
+        "desc": "Exportieren Sie wahlweise ein kompaktes Erweiterungs-Paket (Original + 16/48/128 px) oder einen vollständigen 7-Größen-macOS-Satz."
+      }
+    ],
+    "workflowTitle": "In drei Schritten zum fertigen .icns",
+    "workflowLead": "Ohne Terminal-Befehle und ohne manuelles Anlegen von .iconset-Ordnern.",
+    "steps": [
+      {
+        "num": "01",
+        "title": "PNG-Datei laden",
+        "desc": "Ziehen Sie ein quadratisches PNG mit mindestens 1024 × 1024 px in das Feld; Abmessungen und Dateigröße erscheinen sofort."
+      },
+      {
+        "num": "02",
+        "title": "Format & Zuschnitt wählen",
+        "desc": "Aktivieren oder deaktivieren Sie 22,37 % Eckenrundung und 120 px Randabstand oder wählen Sie ein PNG-ZIP-Preset."
+      },
+      {
+        "num": "03",
+        "title": "Lokal erzeugen & laden",
+        "desc": "Ein Klick synthetisiert die fertige .icns- oder .zip-Datei im Arbeitsspeicher und startet direkt den Download."
+      }
+    ],
+    "faqTitle": "Häufige Fragen",
+    "faqLead": "Antworten zu macOS-.icns-Abständen, Eckenradien und lokaler Browser-Verarbeitung.",
+    "faqItems": [
+      {
+        "q": "Warum fügt PrimalCut 120 px Randabstand um ein 1024 × 1024 Icon hinzu?",
+        "a": "Seit macOS Big Sur sitzen native App-Icons in einem optischen Raster von etwa 824 × 824 innerhalb einer 1024-px-Fläche. Durch 120 px transparenten Rand auf einer 1264 × 1264 Arbeitsfläche wirkt Ihr Icon im Dock genauso groß wie System-Apps."
+      },
+      {
+        "q": "Werden meine PNG-Bilder auf einen Server hochgeladen?",
+        "a": "Nein. Skalierung, Eckenmaske, bikubische Neuberechnung und ZIP-Komprimierung laufen vollständig in Ihrem Browser-Canvas und Arbeitsspeicher. Einmal geladen funktioniert das Werkzeug auch offline."
+      },
+      {
+        "q": "Wozu dient der 22,37 %-Eckenradius und lässt er sich abschalten?",
+        "a": "22,37 % entspricht dem Standard-Eckenverhältnis von macOS-App-Icons. Besitzt Ihre Vorlage bereits eigene Ränder oder freie Konturen, können Sie Rundung und Randabstand unter Zuschnitt- & Exportoptionen deaktivieren."
+      },
+      {
+        "q": "Worin unterscheiden sich ICNS und PNG Set?",
+        "a": "ICNS erzeugt eine einzelne macOS-Icon-Datei mit mehreren Auflösungen für Xcode, Tauri, Electron oder Finder-Informationen. PNG Set bündelt skalierte PNG-Dateien als ZIP-Archiv für Browser-Erweiterungen und Web-Assets."
+      },
+      {
+        "q": "Welche Browser und Betriebssysteme werden unterstützt?",
+        "a": "Jeder moderne Desktop-Browser (Chrome, Safari, Edge, Firefox) unter macOS, Windows oder Linux erzeugt direkt gültige .icns- und PNG-ZIP-Pakete."
+      },
+      {
+        "q": "Gibt es Dateiformat- oder Größenbeschränkungen?",
+        "a": "Für eine flüssige Verarbeitung im Browser-Speicher werden PNG-Dateien (.png) bis 10 MB unterstützt; empfohlen sind mindestens 1024 × 1024 px."
+      }
+    ],
+    "compareCalloutTitle": "PrimalCut vs. iconutil CLI & Image2icon",
+    "compareCalloutBody": "Unsicher, ob Browser-Werkzeug, Apples Terminal-Befehl oder eine native Mac-App besser passt? Lesen Sie den sachlichen Vergleich.",
+    "compareCalloutCta": "Vollständigen Vergleich lesen",
+    "workbenchCalloutTitle": "Ablenkungsfreier Arbeitsbereich",
+    "workbenchCalloutBody": "Öffnen Sie die fokussierte Werkzeugansicht für schnelle Serien-Exporte mit Sitzungsverlauf.",
+    "workbenchCalloutCta": "Arbeitsbereich öffnen"
+  },
+  "vsCompare": {
+    "metaTitle": "PrimalCut vs. iconutil CLI & Image2icon — Sachlicher Icon-Tool-Vergleich",
+    "metaDescription": "Objektiver Vergleich zwischen PrimalCut, Apples Kommandozeilentool iconutil und Image2icon bei Plattform-Support, macOS-Rändern, CI-Automatisierung und Datenschutz.",
+    "breadcrumb": "vs. iconutil & Image2icon",
+    "eyebrow": "Werkzeug-Auswahlhilfe",
+    "title": "PrimalCut vs. iconutil CLI & Image2icon",
+    "lead": "Je nach Arbeitsablauf ist ein anderes Werkzeug im Vorteil. Hier finden Sie die klaren Stärken und Grenzen aller drei Ansätze.",
+    "tableHead": [
+      "Kriterium",
+      "Apple iconutil CLI",
+      "Image2icon (macOS-App)",
+      "PrimalCut (Browser lokal)"
+    ],
+    "rows": [
+      {
+        "label": "Plattform & Einrichtung",
+        "colA": "Nur macOS; erfordert Terminal-Skripte und manuelle .iconset-Ordner",
+        "colB": "Native macOS-App; einzelne Exportformate per In-App-Kauf",
+        "colC": "Kostenlos und ohne Installation in jedem Browser unter macOS, Windows & Linux"
+      },
+      {
+        "label": "macOS-Rundung & Randabstand",
+        "colA": "Keine automatische Maske oder Polsterung; muss vorab gestaltet sein",
+        "colB": "Viele integrierte Vorlagen, Rahmen und Live-Vorschauen",
+        "colC": "22,37 % macOS-Rundung und 120 px Schutzabstand per Klick umschaltbar"
+      },
+      {
+        "label": "Mehrskalige PNG-Pakete",
+        "colA": "Erfordert mehrere sips-Befehle und manuelles Zippen",
+        "colB": "Exportiert PNG-Ordner und diverse Desktop-Icon-Formate",
+        "colC": "Integrierte Presets für Extensions und 7-stufige AppIcons direkt als ZIP"
+      },
+      {
+        "label": "Datenschutz & Datenweg",
+        "colA": "Lokale CLI-Ausführung, offline nutzbar",
+        "colB": "Lokale native Ausführung, offline nutzbar",
+        "colC": "Lokaler Browser-Canvas & Arbeitsspeicher, keinerlei Server-Upload"
+      },
+      {
+        "label": "CI/CD-Automatisierung",
+        "colA": "Erstklassig; direkt in Makefiles, Xcode und GitHub Actions einbindbar",
+        "colB": "Interaktive Ordner-Stapelverarbeitung per Drag-and-Drop",
+        "colC": "Ideal für schnelle visuelle Konvertierungen, ersetzt keine Headless-CI-Skripte"
+      },
+      {
+        "label": "Zusatzformate (ICO / Ordner-Icons)",
+        "colA": "Rein auf .icns und .iconset spezialisiert",
+        "colB": "Direktes Einfärben von Finder-Ordnern, Windows ICO und Templates",
+        "colC": "Schlank auf präzises .icns und Standard-PNG-ZIP-Sätze fokussiert"
+      }
+    ],
+    "whenPrimalCutTitle": "Wann PrimalCut die beste Wahl ist",
+    "whenPrimalCutItems": [
+      {
+        "bold": "Plattformübergreifende Builds ohne Mac-Umgebung",
+        "body": "Sie entwickeln ein Electron- oder Tauri-Projekt unter Windows oder Linux und benötigen sofort eine gültige .icns-Datei."
+      },
+      {
+        "bold": "Randlose PNGs schnell ans Dock anpassen",
+        "body": "Sie haben eine quadratische 1024 × 1024 Grafik und möchten ohne Figma 22,37 % Rundung plus 120 px Randabstand ergänzen."
+      },
+      {
+        "bold": "Unveröffentlichte App-Icons privat halten",
+        "body": "Sie möchten geplante Produkt-Icons nicht an unbekannte Online-Konverter hochladen – die Berechnung bleibt auf Ihrem Gerät."
+      }
+    ],
+    "whenOtherTitle": "Wann iconutil oder Image2icon besser passt",
+    "whenOtherLead": "Hier spielen die beiden Alternativen ihre Stärken aus:",
+    "whenOtherItems": [
+      {
+        "bold": "Automatisierte Build-Pipelines (iconutil wählen)",
+        "body": "Wenn Icons auf macOS-CI-Runnern vollautomatisch per Skript aus Quelldateien kompiliert werden sollen, bleibt Apples iconutil + sips der Standard."
+      },
+      {
+        "bold": "Finder-Ordner gestalten oder 3D-Rahmen nutzen (Image2icon wählen)",
+        "body": "Image2icon ist eine ausgereifte macOS-App, wenn Sie Icons direkt auf Finder-Ordner ziehen oder mit komplexen Vorlagen versehen möchten."
+      }
+    ],
+    "ctaTitle": "Nächstes Icon in Sekunden zuschneiden",
+    "ctaBody": "Keine Registrierung nötig. Die lokale Engine von if9 läuft direkt auf der Startseite.",
+    "ctaTryTool": "Werkzeug auf Startseite nutzen",
+    "ctaOpenWorkbench": "Arbeitsbereich öffnen"
+  },
+  "footer": {
+    "moreFromIf9": "Weitere Tools von if9",
+    "vsCompareLink": "vs. iconutil / Image2icon",
+    "workbenchLink": "Arbeitsbereich",
+    "privacy": "Datenschutz",
+    "terms": "Nutzungsbedingungen",
+    "refund": "Widerruf & Erstattung",
+    "madeBy": "Von if9",
+    "localTrust": "Alle Bildberechnungen bleiben lokal in Ihrem Browser"
+  },
+  "common": {
+    "retry": "Erneut versuchen",
+    "cancel": "Abbrechen",
+    "save": "Speichern",
+    "reset": "Zurücksetzen",
+    "kbUnit": "KB",
+    "mbUnit": "MB"
+  },
+  "errorPage": {
+    "youAreHere": "Sie sind hier",
+    "notFoundTitle": "Seite nicht gefunden",
+    "notFoundDesc": "Die angeforderte URL existiert nicht oder wurde verschoben. Kehren Sie zur PrimalCut-Startseite zurück.",
+    "crashTitle": "Etwas ist schiefgelaufen",
+    "crashDesc": "Beim Rendern dieser Ansicht ist ein Fehler aufgetreten. Laden Sie die Seite neu oder kehren Sie zur Startseite zurück.",
+    "backHome": "Zur Startseite"
+  }
+}
