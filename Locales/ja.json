@@ -1,0 +1,258 @@
+{
+  "brand": {
+    "name": "PrimalCut",
+    "latin": "PrimalCut",
+    "tagline": "ブラウザ完結型 PNG → macOS .icns・複数サイズ PNG アイコン生成ツール",
+    "byline": "Made by if9"
+  },
+  "nav": {
+    "homeAria": "PrimalCut ホーム",
+    "mainAria": "メインナビゲーション",
+    "backHome": "ホームへ戻る",
+    "vsCompare": "iconutil / Image2icon と比較",
+    "openWorkbench": "専用ワークベンチを開く",
+    "backToSite": "製品トップ",
+    "langMenuLabel": "表示言語を切り替え",
+    "settings": "ツール設定"
+  },
+  "tool": {
+    "dropTitle": "PNG 画像をクリックまたはドロップ",
+    "dropSubtitle": "PNG 形式のみ・最大 {maxMb} MB まで対応。処理はすべてブラウザ内で完結します",
+    "errorNotPng": "PNG 形式の画像ファイル（.png）を選択してください",
+    "errorTooLarge": "ファイルサイズが上限の {maxMb} MB を超えています",
+    "errorIcnsFailed": "ICNS の生成に失敗しました。PNG ファイルが破損していないかご確認ください",
+    "errorConvertFailed": "変換に失敗しました。別の PNG ファイルでお試しください",
+    "clearFile": "選択中の画像をクリア",
+    "renameLabel": "出力ファイル名（プレフィックス）",
+    "renamePlaceholder": "拡張子を除いた出力ファイル名を入力",
+    "editNameAria": "出力ファイル名を編集",
+    "fileMeta": "{width} × {height} px · {kb} KB",
+    "selectedFileCount": "{count} 件の PNG ファイルを読み込み済み",
+    "formatLabel": "出力形式を選択",
+    "formatIcnsTitle": "ICNS",
+    "formatIcnsDesc": "macOS .icns アプリアイコン",
+    "formatPngTitle": "PNG Set",
+    "formatPngDesc": "複数サイズ PNG の ZIP パッケージ",
+    "optionsToggle": "切り抜き・出力オプション",
+    "roundedCorners": "macOS 角丸マスク",
+    "roundedCornersHint": "22.37% の標準角丸を適用",
+    "safePadding": "120px 安全余白",
+    "safePaddingHint": "1264 × 1264 グリッド余白",
+    "pngPresetLabel": "PNG サイズプリセット",
+    "presetExtension": "拡張機能向け（元画像 + 16 / 48 / 128 px）",
+    "presetMacApp": "macOS AppIcon 全サイズ（16 / 32 / 64 / 128 / 256 / 512 / 1024 px）",
+    "pngSizeCount": "{count} 個の PNG ファイルを ZIP に同梱",
+    "specTagsTitle": "出力仕様",
+    "viewGrid": "グリッド表示",
+    "viewList": "リスト表示",
+    "convertButton": "変換してダウンロード",
+    "convertingButton": "ローカル変換中…",
+    "recentTitle": "このセッションの書き出し履歴",
+    "queuedCount": "{count} 件のアイコンを書き出し済み",
+    "clearHistory": "履歴をクリア",
+    "localPrivacyNote": "画像はブラウザの Canvas とメモリ上でのみ処理され、サーバーへ送信されることはありません。"
+  },
+  "settings": {
+    "title": "ツール設定",
+    "subtitle": "ワークベンチの表示言語とデフォルトのアイコン切り抜き設定を変更します",
+    "languageLabel": "ワークベンチの表示言語",
+    "languageAuto": "システム設定に従う",
+    "languageHint": "「システム設定に従う」ではブラウザの言語設定を優先し、未対応の言語は English にフォールバックします。公開ページは URL パスで言語が決まります。",
+    "defaultsTitle": "デフォルト出力パラメータ",
+    "close": "完了"
+  },
+  "landing": {
+    "metaTitle": "PrimalCut — 無料・ローカル処理の PNG → macOS .icns アイコン生成ツール",
+    "metaDescription": "PrimalCut はブラウザ上で完結する PNG → macOS .icns・複数サイズ PNG ZIP 生成ツールです。22.37% 角丸、120px 安全余白、バイキュービック補間をローカルで適用し、画像アップロード不要。",
+    "heroBadge": "100% ローカル処理 · インストール不要 · アップロードなし",
+    "heroTitle": "macOS .icns と複数サイズアイコンをブラウザで手早く生成",
+    "heroSubtitle": "高解像度 PNG をドロップするだけで、macOS の標準比率に整えた .icns または複数サイズの PNG アーカイブを数秒で書き出します。",
+    "privacyBadge": "ブラウザ Canvas + png2icons エンジン",
+    "specsTitle": "macOS デスクトップの視覚基準に合わせた設計",
+    "specsLead": "正方形のアートワークやアプリ画面を、Finder「情報を見る」、Xcode、Electron、Tauri ビルドにそのまま使えるアイコンへ変換します。",
+    "specs": [
+      {
+        "tag": "安全余白",
+        "title": "1264 × 1264 標準グリッド余白",
+        "desc": "元画像を 1024 × 1024 に収めたうえで周囲に 120 px の透明余白を確保し、Dock 上で純正アプリアイコンと揃った視覚サイズを保ちます。"
+      },
+      {
+        "tag": "角丸処理",
+        "title": "22.37% macOS 角丸マスク",
+        "desc": "destination-in 合成による滑らかな 22.37% 角丸マスクを採用し、単純な clip 切り抜きで起きる暗いエッジのにじみを防ぎます。"
+      },
+      {
+        "tag": "バイキュービック補間",
+        "title": "高精細なマルチ解像度 .icns",
+        "desc": "ブラウザ内メモリで png2icons のバイキュービック補間を実行し、Retina を含む複数解像度の .icns ファイルを一括生成します。"
+      },
+      {
+        "tag": "複数サイズ ZIP",
+        "title": "拡張機能・AppIcon 用プリセット",
+        "desc": "元画像 + 16 / 48 / 128 px の軽量セットと、16 px から 1024 px まで 7 サイズを揃えた macOS 用セットを切り替えられます。"
+      }
+    ],
+    "workflowTitle": "3 ステップでアイコンを書き出し",
+    "workflowLead": "ターミナル操作や .iconset フォルダの手作業は不要です。",
+    "steps": [
+      {
+        "num": "01",
+        "title": "PNG 画像を読み込む",
+        "desc": "1024 × 1024 以上の正方形透過 PNG をドロップすると、ピクセル数とファイルサイズを即座に表示します。"
+      },
+      {
+        "num": "02",
+        "title": "出力形式と余白・角丸を選択",
+        "desc": "22.37% 角丸と 120 px 安全余白のオン・オフや、複数サイズ PNG ZIP プリセットを調整します。"
+      },
+      {
+        "num": "03",
+        "title": "ローカル生成してダウンロード",
+        "desc": "変換ボタンを押すと、ブラウザ内で .icns または .zip を生成し即座に保存できます。"
+      }
+    ],
+    "faqTitle": "よくある質問",
+    "faqLead": "macOS .icns の余白比率、角丸仕様、ローカル処理に関する Q&A。",
+    "faqItems": [
+      {
+        "q": "なぜ 1024 × 1024 の周囲に 120 px の安全余白を追加するのですか？",
+        "a": "macOS Big Sur 以降の純正アイコンは 1024 キャンバス内の約 824 × 824 のグリッドを基準に設計されています。1264 × 1264 キャンバスに 120 px の余白を設けることで、Dock に並べた際に他アプリより大きく見えすぎるのを防ぎます。"
+      },
+      {
+        "q": "選択した PNG 画像はサーバーにアップロードされますか？",
+        "a": "いいえ。リサイズ、角丸マスク、バイキュービック補間、ZIP 圧縮はすべてお使いのブラウザの Canvas とメモリ内で完結します。ページ読み込み後はオフラインでも動作します。"
+      },
+      {
+        "q": "22.37% の角丸とは何ですか？無効にできますか？",
+        "a": "22.37% は macOS アプリアイコンの標準的な角丸半径比率です。すでに余白や自由なシルエットを持つ PNG の場合は、「切り抜き・出力オプション」から角丸と安全余白をオフにできます。"
+      },
+      {
+        "q": "ICNS と PNG Set の違いは何ですか？",
+        "a": "ICNS は Xcode・Tauri・Electron ビルドや Finder「情報を見る」でのアイコン差し替えにそのまま使える macOS 専用の複数解像度コンテナです。PNG Set は複数サイズの PNG を ZIP にまとめる形式で、ブラウザ拡張機能や Web 素材に最適です。"
+      },
+      {
+        "q": "どの OS とブラウザで利用できますか？",
+        "a": "macOS、Windows、Linux 上のモダンなデスクトップブラウザ（Chrome、Safari、Edge、Firefox）であれば、そのまま標準の .icns および PNG ZIP を生成できます。"
+      },
+      {
+        "q": "ファイル形式や容量の上限はありますか？",
+        "a": "ブラウザ上での快適なメモリ処理のため、10 MB 以下の PNG ファイル（.png）に対応しています。1024 × 1024 px 以上の正方形画像を推奨します。"
+      }
+    ],
+    "compareCalloutTitle": "PrimalCut vs iconutil CLI・Image2icon 比較",
+    "compareCalloutBody": "ブラウザツール、Apple 標準コマンドライン、ネイティブ Mac アプリのどれを選ぶべきか、機能境界を率直に整理しました。",
+    "compareCalloutCta": "比較ページを見る",
+    "workbenchCalloutTitle": "作業に集中できる専用ビューもあります",
+    "workbenchCalloutBody": "説明セクションを省いた専用ワークベンチ画面で、連続してアイコンを変換・履歴確認できます。",
+    "workbenchCalloutCta": "ワークベンチを開く"
+  },
+  "vsCompare": {
+    "metaTitle": "PrimalCut vs iconutil CLI・Image2icon — macOS アイコン作成ツール比較",
+    "metaDescription": "PrimalCut、Apple 公式 iconutil コマンドライン、Image2icon デスクトップアプリの違いを、対応 OS・余白角丸・CI 自動化・プライバシーの観点で客観的に比較します。",
+    "breadcrumb": "iconutil・Image2icon との比較",
+    "eyebrow": "ツール選定ガイド",
+    "title": "PrimalCut vs iconutil CLI・Image2icon",
+    "lead": "アイコン生成は用途によって最適な手段が異なります。3 つの選択肢の特徴と得意領域を事実ベースで比較します。",
+    "tableHead": [
+      "比較項目",
+      "Apple iconutil CLI",
+      "Image2icon（Mac アプリ）",
+      "PrimalCut（ブラウザ完結）"
+    ],
+    "rows": [
+      {
+        "label": "動作環境と導入コスト",
+        "colA": "macOS 専用。ターミナルで sips と .iconset フォルダ構成が必要",
+        "colB": "macOS 専用ネイティブアプリ。一部書き出し形式はアプリ内課金",
+        "colC": "macOS / Windows / Linux のブラウザで即利用可能・完全無料"
+      },
+      {
+        "label": "角丸・安全余白の自動調整",
+        "colA": "非対応。デザインデータ側または個別スクリプトで事前に調整が必要",
+        "colB": "豊富なテンプレートとフレーム、リアルタイムプレビューを搭載",
+        "colC": "22.37% macOS 角丸と 120 px 安全余白をワンクリックで切り替え可能"
+      },
+      {
+        "label": "複数サイズ PNG 一括出力",
+        "colA": "サイズごとに sips コマンドを書いて手動で ZIP 化が必要",
+        "colB": "PNG フォルダや各種デスクトップアイコン形式へ書き出し可能",
+        "colC": "拡張機能向け・macOS 7 サイズ向けプリセットを標準装備し ZIP 出力"
+      },
+      {
+        "label": "プライバシーと送信先",
+        "colA": "ローカル CLI 実行、オフライン動作",
+        "colB": "ローカルアプリ実行、オフライン動作",
+        "colC": "ブラウザ Canvas とローカルメモリのみで完結、サーバー送信ゼロ"
+      },
+      {
+        "label": "CI/CD 自動化適性",
+        "colA": "非常に高い。Makefile や Xcode、GitHub Actions に組み込み可能",
+        "colB": "フォルダのドラッグ＆ドロップによる対話的な一括処理に対応",
+        "colC": "単発〜数十件の素早いビジュアル変換向け。CI スクリプトの代替ではない"
+      },
+      {
+        "label": "ICO・フォルダ装飾などの拡張性",
+        "colA": ".icns と .iconset の相互変換に特化",
+        "colB": "Finder フォルダへの直接適用や Windows ICO 等多彩な形式に対応",
+        "colC": "高品位な .icns と標準 PNG Set に絞り軽量さを維持"
+      }
+    ],
+    "whenPrimalCutTitle": "PrimalCut が向いているケース",
+    "whenPrimalCutItems": [
+      {
+        "bold": "Mac 以外の環境からすぐ .icns を作りたいとき",
+        "body": "Windows や Linux で Electron / Tauri アプリをビルドしており、手元に macOS 環境がなくても正規の .icns が必要な場合。"
+      },
+      {
+        "bold": "正方形の画像をそのまま Dock 規格に整えたいとき",
+        "body": "角丸も余白もない 1024 × 1024 PNG を、Figma を開かずに 22.37% 角丸＋120 px 余白付きアイコンへ仕上げたい場合。"
+      },
+      {
+        "bold": "公開前のアイコンを外部サーバーに送りたくないとき",
+        "body": "未発表プロダクトのアイコン画像をオンライン変換サイトへアップロードせず、手元のブラウザだけで安全に処理したい場合。"
+      }
+    ],
+    "whenOtherTitle": "iconutil や Image2icon のほうが適しているケース",
+    "whenOtherLead": "他 2 つのツールが明確に優れている領域です：",
+    "whenOtherItems": [
+      {
+        "bold": "CI/CD ビルド工程へ自動組み込みするなら（iconutil）",
+        "body": "macOS ランナー上でソース画像から自動的に .icns を生成し続けたい場合は、Apple 純正の iconutil + sips が最も堅牢です。"
+      },
+      {
+        "bold": "Finder フォルダの見た目を直接飾りたいなら（Image2icon）",
+        "body": "ドラッグ操作で Mac のフォルダアイコンをそのまま差し替えたり、立体フレーム付きアイコンを量産したりする用途では Image2icon が快適です。"
+      }
+    ],
+    "ctaTitle": "さっそくアイコンを切り出してみる",
+    "ctaBody": "アカウント登録不要。if9 が提供するローカル変換エンジンをトップページですぐお試しいただけます。",
+    "ctaTryTool": "トップページで変換する",
+    "ctaOpenWorkbench": "ワークベンチを開く"
+  },
+  "footer": {
+    "moreFromIf9": "if9 のその他のツール",
+    "vsCompareLink": "iconutil / Image2icon と比較",
+    "workbenchLink": "専用ワークベンチ",
+    "privacy": "プライバシーポリシー",
+    "terms": "利用規約",
+    "refund": "返金ポリシー",
+    "madeBy": "Made by if9",
+    "localTrust": "すべての画像処理はお使いのブラウザ内で完結します"
+  },
+  "common": {
+    "retry": "再試行",
+    "cancel": "キャンセル",
+    "save": "保存",
+    "reset": "リセット",
+    "kbUnit": "KB",
+    "mbUnit": "MB"
+  },
+  "errorPage": {
+    "youAreHere": "現在地",
+    "notFoundTitle": "ページが見つかりません",
+    "notFoundDesc": "お探しのページは移動または削除された可能性があります。PrimalCut のトップページに戻って変換を続けられます。",
+    "crashTitle": "ページの読み込みでエラーが発生しました",
+    "crashDesc": "表示中に予期しない問題が起きました。再読み込みするかトップページへお戻りください。",
+    "backHome": "トップへ戻る"
+  }
+}

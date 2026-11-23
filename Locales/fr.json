@@ -1,0 +1,261 @@
+{
+  "brand": {
+    "name": "PrimalCut",
+    "latin": "PrimalCut",
+    "tagline": "Convertisseur local de PNG vers .icns macOS et jeux d’icônes PNG",
+    "byline": "Par if9"
+  },
+  "nav": {
+    "homeAria": "Accueil PrimalCut",
+    "mainAria": "Navigation principale",
+    "backHome": "Accueil",
+    "vsCompare": "vs iconutil / Image2icon",
+    "openWorkbench": "Ouvrir l’atelier",
+    "backToSite": "Page produit",
+    "langMenuLabel": "Changer de langue",
+    "settings": "Paramètres de l’outil"
+  },
+  "tool": {
+    "dropTitle": "Cliquez ou déposez une image PNG ici",
+    "dropSubtitle": "Format PNG uniquement, jusqu’à {maxMb} Mo par fichier, traitement local dans le navigateur",
+    "errorNotPng": "Veuillez importer un fichier image PNG valide (.png)",
+    "errorTooLarge": "Le fichier dépasse la limite de {maxMb} Mo. Compressez-le puis réessayez.",
+    "errorIcnsFailed": "Échec de la génération ICNS. Vérifiez que le fichier PNG est valide.",
+    "errorConvertFailed": "La conversion a échoué. Veuillez essayer avec un autre fichier PNG.",
+    "clearFile": "Effacer l’image actuelle",
+    "renameLabel": "Préfixe du fichier exporté",
+    "renamePlaceholder": "Nom du fichier de sortie (sans extension)",
+    "editNameAria": "Modifier le nom du fichier de sortie",
+    "fileMeta": "{width} × {height} px · {kb} Ko",
+    "selectedFileCount": "{count} fichiers source PNG chargés",
+    "selectedFileCountOne": "{count} fichier source PNG chargé",
+    "formatLabel": "Choisir le format de sortie",
+    "formatIcnsTitle": "ICNS",
+    "formatIcnsDesc": "Paquet d’icône macOS .icns",
+    "formatPngTitle": "PNG Set",
+    "formatPngDesc": "PNG multi-tailles compressés en ZIP",
+    "optionsToggle": "Options de recadrage et d’export",
+    "roundedCorners": "Coins arrondis macOS",
+    "roundedCornersHint": "Masque d’arrondi standard de 22,37 %",
+    "safePadding": "Marge de sécurité 120 px",
+    "safePaddingHint": "Marge sur grille 1264 × 1264",
+    "pngPresetLabel": "Préréglage de tailles PNG",
+    "presetExtension": "Extension navigateur (original + 16 / 48 / 128 px)",
+    "presetMacApp": "Jeu complet AppIcon macOS (16 / 32 / 64 / 128 / 256 / 512 / 1024 px)",
+    "pngSizeCount": "Inclut {count} fichiers PNG",
+    "pngSizeCountOne": "Inclut {count} fichier PNG",
+    "specTagsTitle": "Cibles de sortie",
+    "viewGrid": "Vue grille",
+    "viewList": "Vue liste",
+    "convertButton": "Convertir et télécharger",
+    "convertingButton": "Conversion locale en cours…",
+    "recentTitle": "Historique d’export de la session",
+    "queuedCount": "{count} lots d’icônes exportés",
+    "queuedCountOne": "{count} lot d’icônes exporté",
+    "clearHistory": "Effacer l’historique",
+    "localPrivacyNote": "Les images sont traitées uniquement dans le Canvas et la mémoire de votre navigateur, sans aucun envoi serveur."
+  },
+  "settings": {
+    "title": "Paramètres de l’outil",
+    "subtitle": "Définir la langue de l’atelier et les règles de recadrage par défaut",
+    "languageLabel": "Langue de l’interface de l’atelier",
+    "languageAuto": "Selon le système",
+    "languageHint": "En mode automatique, PrimalCut suit les langues du navigateur et bascule vers English si la langue n’est pas prise en charge. Les pages publiques utilisent le préfixe d’URL.",
+    "defaultsTitle": "Paramètres d’export par défaut",
+    "close": "Terminé"
+  },
+  "landing": {
+    "metaTitle": "PrimalCut — Générateur local et gratuit de PNG vers .icns macOS",
+    "metaDescription": "Convertissez vos images PNG en fichiers .icns macOS conformes ou en archives ZIP PNG multi-tailles directement dans votre navigateur. Arrondi 22,37 %, marge 120 px et rééchantillonnage bicubique sans téléversement.",
+    "heroBadge": "100 % local · Sans installation · Zéro envoi",
+    "heroTitle": "Découpe nette d’icônes .icns macOS et PNG multi-tailles",
+    "heroSubtitle": "Déposez un PNG haute définition et exportez en quelques secondes un fichier .icns bien proportionné ou un jeu PNG complet, entièrement dans votre navigateur.",
+    "privacyBadge": "Moteur Canvas navigateur + png2icons",
+    "specsTitle": "Calibré sur les proportions du bureau macOS",
+    "specsLead": "Transformez un visuel carré ou une capture d’application en icône prête pour Lire les informations du Finder, Xcode, Electron ou Tauri.",
+    "specs": [
+      {
+        "tag": "Marge sûre",
+        "title": "Grille 1264 × 1264 avec marge",
+        "desc": "Adapte l’image dans 1024 × 1024 au cœur d’un canevas 1264 × 1264 avec 120 px transparents sur chaque bord pour respecter la taille visuelle du Dock."
+      },
+      {
+        "tag": "Géométrie",
+        "title": "Coins arrondis macOS à 22,37 %",
+        "desc": "Utilise la composition alpha destination-in pour appliquer un arrondi net à 22,37 % sans halo sombre sur les bords."
+      },
+      {
+        "tag": "Bicubique",
+        "title": "Fichier .icns haute fidélité",
+        "desc": "Exécute le rééchantillonnage bicubique de png2icons en mémoire pour inclure les résolutions Retina et standard."
+      },
+      {
+        "tag": "Archive PNG",
+        "title": "Préréglages Extension & AppIcon",
+        "desc": "Exportez un lot compact pour extension (original + 16/48/128 px) ou la série complète macOS de 16 à 1024 px."
+      }
+    ],
+    "workflowTitle": "Trois étapes du PNG au .icns",
+    "workflowLead": "Aucune ligne de commande ni dossier .iconset à préparer à la main.",
+    "steps": [
+      {
+        "num": "01",
+        "title": "Charger un fichier PNG",
+        "desc": "Déposez un PNG carré transparent de 1024 × 1024 ou plus ; les dimensions et le poids s’affichent aussitôt."
+      },
+      {
+        "num": "02",
+        "title": "Choisir format et marges",
+        "desc": "Activez ou désactivez l’arrondi à 22,37 % et la marge de 120 px, ou sélectionnez un préréglage PNG ZIP."
+      },
+      {
+        "num": "03",
+        "title": "Générer et télécharger",
+        "desc": "Un clic synthétise le binaire .icns ou l’archive .zip en mémoire et lance le téléchargement."
+      }
+    ],
+    "faqTitle": "Questions fréquentes",
+    "faqLead": "Précisions sur les marges .icns macOS, les coins arrondis et le traitement local.",
+    "faqItems": [
+      {
+        "q": "Pourquoi PrimalCut ajoute-t-il 120 px de marge autour d’une icône 1024 × 1024 ?",
+        "a": "Depuis macOS Big Sur, les icônes natives occupent une grille optique d’environ 824 × 824 dans un carré de 1024 px. En plaçant le visuel sur un canevas 1264 × 1264 avec 120 px transparents, votre icône garde la même taille perçue dans le Dock."
+      },
+      {
+        "q": "Mes images PNG sont-elles envoyées vers un serveur ?",
+        "a": "Non. Le redimensionnement, le masque d’arrondi, le rééchantillonnage bicubique et la compression ZIP s’exécutent intégralement dans le Canvas et la mémoire JavaScript de votre navigateur."
+      },
+      {
+        "q": "Pourquoi un arrondi de 22,37 % et peut-on le désactiver ?",
+        "a": "22,37 % correspond à la proportion d’arrondi standard des icônes d’applications macOS. Si votre image possède déjà des marges ou une silhouette libre, désactivez ces deux options dans les paramètres de recadrage."
+      },
+      {
+        "q": "Quelle est la différence entre ICNS et PNG Set ?",
+        "a": "ICNS génère un fichier .icns multi-résolutions prêt pour Xcode, Tauri, Electron ou le Finder. PNG Set regroupe plusieurs tailles PNG dans une archive ZIP pour les extensions navigateur et le web."
+      },
+      {
+        "q": "Quels navigateurs et systèmes sont pris en charge ?",
+        "a": "Tout navigateur moderne (Chrome, Safari, Edge, Firefox) sur macOS, Windows ou Linux peut générer directement des fichiers .icns et ZIP valides."
+      },
+      {
+        "q": "Y a-t-il des limites de format ou de taille de fichier ?",
+        "a": "Pour garantir une conversion fluide en mémoire, les fichiers source doivent être au format PNG (.png) et ne pas dépasser 10 Mo (1024 × 1024 px recommandé)."
+      }
+    ],
+    "compareCalloutTitle": "PrimalCut vs iconutil CLI & Image2icon",
+    "compareCalloutBody": "Vous hésitez entre un outil web local, la commande Apple ou une application macOS native ? Consultez notre comparatif objectif.",
+    "compareCalloutCta": "Lire le comparatif complet",
+    "workbenchCalloutTitle": "Besoin d’un espace dédié sans distraction ?",
+    "workbenchCalloutBody": "Ouvrez l’atelier épuré pour enchaîner vos conversions avec l’historique de session.",
+    "workbenchCalloutCta": "Ouvrir l’atelier"
+  },
+  "vsCompare": {
+    "metaTitle": "PrimalCut vs iconutil CLI & Image2icon — Comparatif d’outils d’icônes macOS",
+    "metaDescription": "Comparatif objectif entre PrimalCut, la ligne de commande iconutil d’Apple et l’application macOS Image2icon : compatibilité, marges, automatisation CI et confidentialité.",
+    "breadcrumb": "vs iconutil & Image2icon",
+    "eyebrow": "Guide de choix",
+    "title": "PrimalCut vs iconutil CLI & Image2icon",
+    "lead": "Chaque flux de travail appelle un outil différent. Voici les forces et limites réelles de ces trois approches.",
+    "tableHead": [
+      "Critère",
+      "Apple iconutil CLI",
+      "Image2icon (App macOS)",
+      "PrimalCut (Local navigateur)"
+    ],
+    "rows": [
+      {
+        "label": "Plateforme et installation",
+        "colA": "macOS uniquement ; demande des scripts Terminal et un dossier .iconset",
+        "colB": "Application native macOS ; certains formats nécessitent un achat intégré",
+        "colC": "Gratuit et immédiat dans tout navigateur sur macOS, Windows ou Linux"
+      },
+      {
+        "label": "Arrondi macOS et marge de sécurité",
+        "colA": "Aucun masque automatique ; à préparer dans le fichier source",
+        "colB": "Nombreux modèles intégrés, cadres et aperçus visuels",
+        "colC": "Arrondi macOS 22,37 % et marge 120 px activables en un clic"
+      },
+      {
+        "label": "Lots PNG multi-tailles",
+        "colA": "Nécessite plusieurs commandes sips et une compression manuelle",
+        "colB": "Exporte des dossiers PNG et divers formats d’icônes",
+        "colC": "Préréglages Extension et AppIcon macOS 7 tailles exportés en ZIP"
+      },
+      {
+        "label": "Confidentialité et trajet des fichiers",
+        "colA": "Exécution locale en CLI, fonctionne hors ligne",
+        "colB": "Exécution locale native, fonctionne hors ligne",
+        "colC": "Traitement local via Canvas et mémoire navigateur, zéro envoi serveur"
+      },
+      {
+        "label": "Automatisation CI/CD",
+        "colA": "Exemplaire ; s’intègre directement dans Makefile, Xcode et GitHub Actions",
+        "colB": "Traitement par lots interactif par glisser-déposer de dossiers",
+        "colC": "Conçu pour des conversions visuelles rapides, ne remplace pas un script CI"
+      },
+      {
+        "label": "Formats annexes (ICO / dossiers Finder)",
+        "colA": "Limité à la conversion .icns et .iconset",
+        "colB": "Personnalisation directe de dossiers Finder, ICO Windows et gabarits",
+        "colC": "Centré sur le .icns haute fidélité et les jeux PNG standards"
+      }
+    ],
+    "whenPrimalCutTitle": "Quand privilégier PrimalCut",
+    "whenPrimalCutItems": [
+      {
+        "bold": "Builds multiplateformes sans poste Mac sous la main",
+        "body": "Vous compilez une app Electron ou Tauri depuis Windows ou Linux et avez besoin d’un fichier .icns conforme tout de suite."
+      },
+      {
+        "bold": "PNG carrés pleins bords trop grands dans le Dock",
+        "body": "Vous partez d’un PNG 1024 × 1024 brut et voulez l’arrondi à 22,37 % plus la marge de 120 px sans ouvrir Figma."
+      },
+      {
+        "bold": "Visuels confidentiels avant lancement",
+        "body": "Vous ne souhaitez pas envoyer l’icône d’un produit encore secret sur un convertisseur distant : tout reste sur votre machine."
+      }
+    ],
+    "whenOtherTitle": "Quand préférer iconutil ou Image2icon",
+    "whenOtherLead": "Les cas où les deux autres outils gardent l’avantage :",
+    "whenOtherItems": [
+      {
+        "bold": "Chaînes d’intégration continue automatisées (choisir iconutil)",
+        "body": "Si vos scripts CI doivent recompiler automatiquement des icônes sur des runners macOS, iconutil + sips reste la référence."
+      },
+      {
+        "bold": "Habillage de dossiers Finder ou cadres 3D (choisir Image2icon)",
+        "body": "Image2icon excelle comme utilitaire macOS natif pour personnaliser directement des dossiers du Finder ou appliquer des modèles riches."
+      }
+    ],
+    "ctaTitle": "Découpez votre prochaine icône en quelques secondes",
+    "ctaBody": "Sans inscription : le moteur local signé if9 fonctionne directement sur la page d’accueil.",
+    "ctaTryTool": "Utiliser l’outil à l’accueil",
+    "ctaOpenWorkbench": "Ouvrir l’atelier"
+  },
+  "footer": {
+    "moreFromIf9": "Plus d'outils par if9",
+    "vsCompareLink": "vs iconutil / Image2icon",
+    "workbenchLink": "Atelier dédié",
+    "privacy": "Confidentialité",
+    "terms": "Conditions d’utilisation",
+    "refund": "Politique de remboursement",
+    "madeBy": "Par if9",
+    "localTrust": "Tout le traitement d’image reste local dans votre navigateur"
+  },
+  "common": {
+    "retry": "Réessayer",
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "reset": "Réinitialiser",
+    "kbUnit": "Ko",
+    "mbUnit": "Mo"
+  },
+  "errorPage": {
+    "youAreHere": "Vous êtes ici",
+    "notFoundTitle": "Page introuvable",
+    "notFoundDesc": "L’adresse demandée n’existe pas ou a été déplacée. Revenez à l’accueil de PrimalCut pour continuer.",
+    "crashTitle": "Une erreur est survenue",
+    "crashDesc": "Un incident inattendu s’est produit lors de l’affichage. Rechargez la page ou revenez à l’accueil.",
+    "backHome": "Retour à l’accueil"
+  }
+}

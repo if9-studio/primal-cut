@@ -1,0 +1,261 @@
+{
+  "brand": {
+    "name": "PrimalCut",
+    "latin": "PrimalCut",
+    "tagline": "Client-side PNG to macOS .icns and multi-size icon converter",
+    "byline": "Made by if9"
+  },
+  "nav": {
+    "homeAria": "PrimalCut Home",
+    "mainAria": "Main navigation",
+    "backHome": "Home",
+    "vsCompare": "vs iconutil / Image2icon",
+    "openWorkbench": "Open Workbench",
+    "backToSite": "Product Home",
+    "langMenuLabel": "Switch language",
+    "settings": "Tool Settings"
+  },
+  "tool": {
+    "dropTitle": "Click or drop a PNG image here",
+    "dropSubtitle": "PNG only, up to {maxMb} MB per file, processed locally in your browser",
+    "errorNotPng": "Please upload a valid PNG image (.png)",
+    "errorTooLarge": "File exceeds the {maxMb} MB limit. Please compress and try again.",
+    "errorIcnsFailed": "Failed to generate ICNS. Please verify the PNG file is intact.",
+    "errorConvertFailed": "Conversion failed. Please try another PNG file.",
+    "clearFile": "Clear current image",
+    "renameLabel": "Output filename prefix",
+    "renamePlaceholder": "Enter export filename (without extension)",
+    "editNameAria": "Edit output filename",
+    "fileMeta": "{width} × {height} px · {kb} KB",
+    "selectedFileCount": "{count} PNG source files loaded",
+    "selectedFileCountOne": "{count} PNG source file loaded",
+    "formatLabel": "Choose output format",
+    "formatIcnsTitle": "ICNS",
+    "formatIcnsDesc": "macOS .icns app icon bundle",
+    "formatPngTitle": "PNG Set",
+    "formatPngDesc": "Multi-size PNG files packed in ZIP",
+    "optionsToggle": "Crop & export options",
+    "roundedCorners": "macOS rounded corners",
+    "roundedCornersHint": "22.37% squircle-style corner mask",
+    "safePadding": "120px safe padding",
+    "safePaddingHint": "1264 × 1264 grid margin",
+    "pngPresetLabel": "PNG size preset",
+    "presetExtension": "Browser extension (original + 16 / 48 / 128 px)",
+    "presetMacApp": "macOS AppIcon set (16 / 32 / 64 / 128 / 256 / 512 / 1024 px)",
+    "pngSizeCount": "Packs {count} PNG files",
+    "pngSizeCountOne": "Packs {count} PNG file",
+    "specTagsTitle": "Output targets",
+    "viewGrid": "Grid preview",
+    "viewList": "List view",
+    "convertButton": "Convert & Download",
+    "convertingButton": "Converting locally…",
+    "recentTitle": "Session export history",
+    "queuedCount": "{count} icon bundles exported",
+    "queuedCountOne": "{count} icon bundle exported",
+    "clearHistory": "Clear history",
+    "localPrivacyNote": "Images are processed strictly inside your browser Canvas and memory—never uploaded to any server."
+  },
+  "settings": {
+    "title": "Tool Settings",
+    "subtitle": "Configure workbench language preference and default icon crop behavior",
+    "languageLabel": "Workbench interface language",
+    "languageAuto": "System",
+    "languageHint": "When set to System, PrimalCut matches your browser languages and falls back to English for unsupported locales. Public marketing pages always resolve by URL path.",
+    "defaultsTitle": "Default export parameters",
+    "close": "Done"
+  },
+  "landing": {
+    "metaTitle": "PrimalCut — Free Local PNG to macOS .icns Icon Generator",
+    "metaDescription": "Convert PNG images to compliant macOS .icns bundles or multi-size PNG ZIP sets directly in your browser. Applies 22.37% rounded corners, 120px safe padding, and bicubic resampling with zero uploads.",
+    "heroBadge": "100% Local · Zero Install · Zero Upload",
+    "heroTitle": "Clean macOS .icns and multi-size icon cutter",
+    "heroSubtitle": "Drop a high-resolution PNG and export a properly padded .icns bundle or crisp multi-size PNG archive in seconds—entirely inside your browser.",
+    "privacyBadge": "Browser Canvas + png2icons engine",
+    "specsTitle": "Built around macOS desktop icon proportions",
+    "specsLead": "Turn a square artwork export or app screenshot into a ready-to-drop icon for Finder Get Info, Xcode, Electron, or Tauri builds.",
+    "specs": [
+      {
+        "tag": "Safe margin",
+        "title": "1264 × 1264 grid padding",
+        "desc": "Scales your source image to fit 1024 × 1024 inside a 1264 × 1264 canvas with 120 px transparent padding on each edge, matching native Dock optical weight."
+      },
+      {
+        "tag": "Corner mask",
+        "title": "22.37% macOS corner radius",
+        "desc": "Uses destination-in alpha compositing to apply smooth 22.37% rounded corners without dark anti-aliasing halos."
+      },
+      {
+        "tag": "Bicubic scaling",
+        "title": "Full multi-resolution .icns",
+        "desc": "Runs png2icons bicubic resampling directly in browser memory to pack crisp Retina and legacy macOS icon representations."
+      },
+      {
+        "tag": "PNG ZIP set",
+        "title": "Extension & AppIcon presets",
+        "desc": "Export either a compact browser extension bundle (original + 16/48/128 px) or a full 7-size macOS PNG set from 16 px to 1024 px."
+      }
+    ],
+    "workflowTitle": "Three steps from PNG to .icns",
+    "workflowLead": "No Terminal commands or manual .iconset folder wiring required.",
+    "steps": [
+      {
+        "num": "01",
+        "title": "Load a PNG file",
+        "desc": "Drop a 1024 × 1024 or larger square transparent PNG; dimensions and byte size appear immediately."
+      },
+      {
+        "num": "02",
+        "title": "Pick format & crop rules",
+        "desc": "Keep or toggle the 22.37% corner radius and 120 px safe padding, or switch to a multi-size PNG ZIP preset."
+      },
+      {
+        "num": "03",
+        "title": "Generate & download locally",
+        "desc": "Click convert to synthesize the binary .icns or .zip archive directly in memory and save it to disk."
+      }
+    ],
+    "faqTitle": "Frequently asked questions",
+    "faqLead": "Answers about macOS .icns margins, corner geometry, and client-side processing.",
+    "faqItems": [
+      {
+        "q": "Why does PrimalCut add 120 px padding around a 1024 × 1024 icon?",
+        "a": "Since macOS Big Sur, native app icons sit inside an optical grid of roughly 824 × 824 within a 1024 canvas. Rendering your icon onto a 1264 × 1264 canvas with 120 px transparent padding keeps its apparent Dock size aligned with system apps."
+      },
+      {
+        "q": "Are my PNG images ever uploaded to a server?",
+        "a": "No. Resizing, corner masking, bicubic resampling, and ZIP compression happen completely inside your browser Canvas and JavaScript memory. Once loaded, the page works even offline."
+      },
+      {
+        "q": "Why 22.37% corner radius, and can I disable it?",
+        "a": "22.37% matches Apple's standard macOS app icon corner proportion. If your artwork already includes transparent margins or custom silhouettes, simply toggle off rounded corners and safe padding under Crop & export options."
+      },
+      {
+        "q": "What is the difference between ICNS and PNG Set?",
+        "a": "ICNS outputs a single macOS multi-resolution .icns file ready for Xcode, Tauri, Electron, or Finder Get Info. PNG Set packs standard resized PNG files into a ZIP archive for browser extensions, web assets, and design handoff."
+      },
+      {
+        "q": "Which browsers and operating systems are supported?",
+        "a": "Any modern desktop browser (Chrome, Safari, Edge, Firefox) on macOS, Windows, or Linux can generate valid .icns and PNG ZIP bundles directly."
+      },
+      {
+        "q": "Are there file format or size limits?",
+        "a": "To keep browser memory conversion fast and reliable, source files must be PNG (.png) under 10 MB, ideally 1024 × 1024 px or higher."
+      }
+    ],
+    "compareCalloutTitle": "PrimalCut vs iconutil CLI & Image2icon",
+    "compareCalloutBody": "Not sure whether to use a browser tool, Apple's command-line utility, or a native macOS app? Read an honest side-by-side comparison.",
+    "compareCalloutCta": "Read full comparison",
+    "workbenchCalloutTitle": "Need a distraction-free workspace?",
+    "workbenchCalloutBody": "Open the dedicated workbench view to convert multiple icons cleanly with session history.",
+    "workbenchCalloutCta": "Open Workbench"
+  },
+  "vsCompare": {
+    "metaTitle": "PrimalCut vs iconutil CLI & Image2icon — Honest macOS Icon Tool Comparison",
+    "metaDescription": "Compare PrimalCut, Apple's iconutil command-line tool, and Image2icon across platform support, macOS corner padding, batch automation, and local privacy.",
+    "breadcrumb": "vs iconutil & Image2icon",
+    "eyebrow": "Tool Selection Guide",
+    "title": "PrimalCut vs iconutil CLI & Image2icon",
+    "lead": "Different workflows call for different tools. Here is an objective breakdown of what each approach handles best and where its boundaries lie.",
+    "tableHead": [
+      "Dimension",
+      "Apple iconutil CLI",
+      "Image2icon (macOS App)",
+      "PrimalCut (Browser Local)"
+    ],
+    "rows": [
+      {
+        "label": "Platform & setup",
+        "colA": "macOS only; requires Terminal scripts and manual .iconset folder naming",
+        "colB": "macOS native app install; some export formats require paid unlock",
+        "colC": "Runs free in any modern browser on macOS, Windows, or Linux with zero setup"
+      },
+      {
+        "label": "macOS corners & padding",
+        "colA": "No automatic corner mask or margin; must be prepared in design files",
+        "colB": "Rich built-in templates, device frames, and visual previews",
+        "colC": "One-click toggle for 22.37% macOS corner radius and 120 px safe padding"
+      },
+      {
+        "label": "Multi-size PNG bundles",
+        "colA": "Requires scripting multiple sips resize commands and zip manually",
+        "colB": "Exports PNG folders and several desktop icon formats",
+        "colC": "Built-in extension preset and 7-size macOS AppIcon preset packed as ZIP"
+      },
+      {
+        "label": "Privacy & data path",
+        "colA": "Local CLI execution, works offline",
+        "colB": "Local native execution, works offline",
+        "colC": "Local browser Canvas & memory execution; zero server uploads"
+      },
+      {
+        "label": "CI/CD automation",
+        "colA": "Best in class; embeds cleanly into Makefiles, Xcode, and GitHub Actions",
+        "colB": "Supports folder drag-and-drop batching for interactive desktop use",
+        "colC": "Built for fast visual conversions from one to dozens of icons, not headless CI"
+      },
+      {
+        "label": "Extra formats (ICO / Finder folders)",
+        "colA": "Focused strictly on .icns and .iconset conversion",
+        "colB": "Supports direct Finder folder icon replacement, Windows ICO, and templates",
+        "colC": "Focused cleanly on high-fidelity .icns and standard PNG ZIP sets"
+      }
+    ],
+    "whenPrimalCutTitle": "When PrimalCut is the right fit",
+    "whenPrimalCutItems": [
+      {
+        "bold": "Cross-platform builds without Mac tooling",
+        "body": "You are shipping an Electron, Tauri, or web project from Windows or Linux and need a valid macOS .icns icon immediately."
+      },
+      {
+        "bold": "Full-bleed square PNGs that look oversized in the Dock",
+        "body": "You have a raw 1024 × 1024 square graphic and want Apple-style 22.37% rounded corners plus 120 px padding without opening Figma."
+      },
+      {
+        "bold": "Unreleased app artwork with strict privacy",
+        "body": "You prefer not to upload unannounced product icons to ad-heavy conversion servers; everything stays in your local browser."
+      }
+    ],
+    "whenOtherTitle": "When iconutil or Image2icon is better",
+    "whenOtherLead": "Where the other two tools clearly shine:",
+    "whenOtherItems": [
+      {
+        "bold": "Automated build pipelines (choose iconutil)",
+        "body": "If your team compiles icons from source assets inside CI scripts on macOS runners, Apple's built-in iconutil + sips remains the gold standard."
+      },
+      {
+        "bold": "Customizing Finder folders or textured icon frames (choose Image2icon)",
+        "body": "Image2icon is a polished native macOS utility when you want to drag icons directly onto Finder folders or style icons with 3D templates."
+      }
+    ],
+    "ctaTitle": "Cut your next icon in seconds",
+    "ctaBody": "No account needed. PrimalCut by if9 runs right on the home page—drop a PNG to start.",
+    "ctaTryTool": "Use Tool on Home Page",
+    "ctaOpenWorkbench": "Open Workbench"
+  },
+  "footer": {
+    "moreFromIf9": "More tools from if9",
+    "vsCompareLink": "vs iconutil / Image2icon",
+    "workbenchLink": "Dedicated Workbench",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "refund": "Refund Policy",
+    "madeBy": "Made by if9",
+    "localTrust": "All image processing stays local in your browser"
+  },
+  "common": {
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "save": "Save",
+    "reset": "Reset",
+    "kbUnit": "KB",
+    "mbUnit": "MB"
+  },
+  "errorPage": {
+    "youAreHere": "You are here",
+    "notFoundTitle": "Page not found",
+    "notFoundDesc": "The requested URL could not be found. Return to the PrimalCut home page to keep converting icons.",
+    "crashTitle": "Something went wrong",
+    "crashDesc": "An unexpected rendering error occurred. Please refresh the page or go back home.",
+    "backHome": "Back to Home"
+  }
+}

@@ -1,0 +1,258 @@
+{
+  "brand": {
+    "name": "PrimalCut",
+    "latin": "PrimalCut",
+    "tagline": "브라우저 로컬 PNG → macOS .icns 및 다중 크기 아이콘 변환기",
+    "byline": "Made by if9"
+  },
+  "nav": {
+    "homeAria": "PrimalCut 홈",
+    "mainAria": "주 메뉴",
+    "backHome": "홈으로",
+    "vsCompare": "iconutil / Image2icon 비교",
+    "openWorkbench": "워크벤치 열기",
+    "backToSite": "제품 홈",
+    "langMenuLabel": "언어 전환",
+    "settings": "도구 설정"
+  },
+  "tool": {
+    "dropTitle": "여기를 클릭하거나 PNG 이미지를 끌어다 놓으세요",
+    "dropSubtitle": "PNG 형식만 지원, 파일당 최대 {maxMb} MB, 브라우저 로컬에서 처리됩니다",
+    "errorNotPng": "올바른 PNG 이미지 파일(.png)을 업로드하세요",
+    "errorTooLarge": "파일이 최대 용량({maxMb} MB)을 초과했습니다. 압축 후 다시 시도하세요.",
+    "errorIcnsFailed": "ICNS 생성에 실패했습니다. PNG 파일이 손상되지 않았는지 확인하세요.",
+    "errorConvertFailed": "변환에 실패했습니다. 다른 PNG 파일로 다시 시도하세요.",
+    "clearFile": "현재 이미지 지우기",
+    "renameLabel": "출력 파일 이름 접두사",
+    "renamePlaceholder": "내보낼 파일 이름 입력 (확장자 제외)",
+    "editNameAria": "출력 파일 이름 편집",
+    "fileMeta": "{width} × {height} px · {kb} KB",
+    "selectedFileCount": "PNG 원본 파일 {count}개 불러옴",
+    "formatLabel": "출력 형식 선택",
+    "formatIcnsTitle": "ICNS",
+    "formatIcnsDesc": "macOS .icns 앱 아이콘 번들",
+    "formatPngTitle": "PNG Set",
+    "formatPngDesc": "다중 크기 PNG ZIP 아카이브",
+    "optionsToggle": "자르기 및 내보내기 옵션",
+    "roundedCorners": "macOS 둥근 모서리",
+    "roundedCornersHint": "22.37% 표준 모서리 마스크",
+    "safePadding": "120px 안전 여백",
+    "safePaddingHint": "1264 × 1264 그리드 여백",
+    "pngPresetLabel": "PNG 크기 프리셋",
+    "presetExtension": "브라우저 확장용 (원본 + 16 / 48 / 128 px)",
+    "presetMacApp": "macOS AppIcon 전체 세트 (16 / 32 / 64 / 128 / 256 / 512 / 1024 px)",
+    "pngSizeCount": "PNG 파일 {count}개를 ZIP으로 묶습니다",
+    "specTagsTitle": "출력 규격",
+    "viewGrid": "그리드 보기",
+    "viewList": "목록 보기",
+    "convertButton": "변환 및 다운로드",
+    "convertingButton": "로컬에서 변환 중…",
+    "recentTitle": "현재 세션 내보내기 기록",
+    "queuedCount": "아이콘 번들 {count}건 내보냄",
+    "clearHistory": "기록 지우기",
+    "localPrivacyNote": "이미지는 브라우저의 Canvas와 메모리에서만 처리되며 서버로 절대 전송되지 않습니다."
+  },
+  "settings": {
+    "title": "도구 설정",
+    "subtitle": "워크벤치 인터페이스 언어와 기본 아이콘 자르기 규칙을 설정합니다",
+    "languageLabel": "워크벤치 인터페이스 언어",
+    "languageAuto": "시스템 설정 따르기",
+    "languageHint": "시스템 설정 따르기를 선택하면 브라우저 언어를 우선 적용하며, 지원하지 않는 언어는 English로 폴백됩니다. 공개 안내는 URL 경로로 언어가 결정됩니다.",
+    "defaultsTitle": "기본 출력 매개변수",
+    "close": "완료"
+  },
+  "landing": {
+    "metaTitle": "PrimalCut — 무료 로컬 PNG → macOS .icns 아이콘 생성기",
+    "metaDescription": "브라우저에서 바로 PNG 이미지를 macOS .icns 번들 또는 다중 크기 PNG ZIP으로 변환하세요. 22.37% 둥근 모서리, 120px 안전 여백, 바이큐빅 리샘플링을 업로드 없이 처리합니다.",
+    "heroBadge": "100% 로컬 처리 · 설치 불필요 · 업로드 없음",
+    "heroTitle": "깔끔한 macOS .icns 및 다중 크기 아이콘 재단 도구",
+    "heroSubtitle": "고해상도 PNG를 끌어다 놓으면 macOS 데스크톱 비율에 맞춘 .icns 또는 표준 PNG 패키지를 브라우저 로컬에서 몇 초 만에 내보냅니다.",
+    "privacyBadge": "브라우저 Canvas + png2icons 엔진",
+    "specsTitle": "macOS 데스크톱 아이콘 규격에 맞춘 정밀 설계",
+    "specsLead": "정사각형 아트워크나 앱 스크린샷을 Finder 정보 가져오기, Xcode, Electron, Tauri 빌드에 바로 쓸 수 있는 아이콘으로 바꿉니다.",
+    "specs": [
+      {
+        "tag": "안전 여백",
+        "title": "1264 × 1264 표준 그리드 여백",
+        "desc": "원본을 1024 × 1024로 맞춘 뒤 사방에 120 px 투명 여백을 추가해 Dock에서 macOS 기본 아이콘과 시각적 크기를 일치시킵니다."
+      },
+      {
+        "tag": "모서리 마스크",
+        "title": "22.37% macOS 둥근 모서리",
+        "desc": "destination-in 알파 합성을 사용해 단순 clip 방식에서 생기는 어두운 테두리 없이 매끄러운 22.37% 곡률을 적용합니다."
+      },
+      {
+        "tag": "바이큐빅 리샘플링",
+        "title": "고화질 다중 해상도 .icns",
+        "desc": "브라우저 메모리에서 png2icons 바이큐빅 보간을 실행해 Retina 및 기본 macOS 해상도를 모두 담은 .icns를 생성합니다."
+      },
+      {
+        "tag": "PNG ZIP 세트",
+        "title": "확장 프로그램 및 AppIcon 프리셋",
+        "desc": "원본 + 16 / 48 / 128 px의 가벼운 확장용 묶음과 16 px부터 1024 px까지 7가지 macOS 규격 세트를 선택할 수 있습니다."
+      }
+    ],
+    "workflowTitle": "PNG에서 .icns까지 3단계",
+    "workflowLead": "터미널 명령어나 수동 .iconset 폴더 구성이 필요 없습니다.",
+    "steps": [
+      {
+        "num": "01",
+        "title": "PNG 이미지 불러오기",
+        "desc": "1024 × 1024 이상의 정사각형 투명 PNG를 놓으면 해상도와 파일 크기가 즉시 표시됩니다."
+      },
+      {
+        "num": "02",
+        "title": "형식과 자르기 옵션 선택",
+        "desc": "22.37% 둥근 모서리와 120 px 안전 여백을 켜거나 끄고, 원하는 PNG ZIP 프리셋을 고르세요."
+      },
+      {
+        "num": "03",
+        "title": "로컬 생성 후 즉시 다운로드",
+        "desc": "변환 버튼을 누르면 메모리에서 .icns 또는 .zip 파일을 생성해 바로 저장합니다."
+      }
+    ],
+    "faqTitle": "자주 묻는 질문",
+    "faqLead": "macOS .icns 여백, 모서리 곡률, 브라우저 로컬 처리에 대한 안내입니다.",
+    "faqItems": [
+      {
+        "q": "왜 1024 × 1024 아이콘 둘레에 120 px 안전 여백을 추가하나요?",
+        "a": "macOS Big Sur 이후 기본 앱 아이콘은 1024 캔버스 안의 약 824 × 824 시각 영역에 맞춥니다. 1264 × 1264 캔버스에 120 px 여백을 두면 Dock에 올렸을 때 다른 앱보다 유독 커 보이지 않습니다."
+      },
+      {
+        "q": "선택한 PNG 이미지가 서버로 업로드되나요?",
+        "a": "아니요. 크기 조정, 모서리 마스킹, 바이큐빅 리샘플링, ZIP 압축이 모두 브라우저의 Canvas와 JavaScript 메모리 안에서 처리됩니다. 페이지가 열린 뒤에는 오프라인에서도 동작합니다."
+      },
+      {
+        "q": "22.37% 둥근 모서리는 무엇이며 끌 수 있나요?",
+        "a": "22.37%는 Apple macOS 앱 아이콘의 표준 모서리 반지름 비율입니다. 이미 여백이나 고유한 외곽선이 있는 그래픽이라면 자르기 및 내보내기 옵션에서 모서리와 여백을 끌 수 있습니다."
+      },
+      {
+        "q": "ICNS와 PNG Set의 차이는 무엇인가요?",
+        "a": "ICNS는 Xcode, Tauri, Electron 빌드나 Finder 정보 가져오기에서 바로 쓰는 macOS 전용 다중 해상도 파일입니다. PNG Set은 여러 크기의 PNG 파일을 ZIP으로 묶어 브라우저 확장이나 웹 리소스에 활용합니다."
+      },
+      {
+        "q": "어떤 브라우저와 운영체제에서 사용할 수 있나요?",
+        "a": "macOS, Windows, Linux의 최신 데스크톱 브라우저(Chrome, Safari, Edge, Firefox)에서 모두 표준 .icns 및 PNG ZIP을 생성할 수 있습니다."
+      },
+      {
+        "q": "지원하는 파일 형식이나 용량 제한이 있나요?",
+        "a": "브라우저 메모리에서 빠르고 안정적으로 변환하기 위해 10 MB 이하의 PNG 파일(.png)을 지원하며 1024 × 1024 px 이상을 권장합니다."
+      }
+    ],
+    "compareCalloutTitle": "PrimalCut vs iconutil CLI & Image2icon",
+    "compareCalloutBody": "웹 도구, Apple 터미널 명령어, 네이티브 Mac 앱 중 어떤 방식이 맞는지 객관적으로 비교해 보세요.",
+    "compareCalloutCta": "비교 가이드 보기",
+    "workbenchCalloutTitle": "작업에만 집중하고 싶다면",
+    "workbenchCalloutBody": "설명 섹션을 비운 전용 워크벤치에서 연속 변환과 내보내기 기록을 깔끔하게 관리할 수 있습니다.",
+    "workbenchCalloutCta": "워크벤치 열기"
+  },
+  "vsCompare": {
+    "metaTitle": "PrimalCut vs iconutil CLI & Image2icon — macOS 아이콘 도구 비교",
+    "metaDescription": "PrimalCut, Apple iconutil CLI, Image2icon 데스크톱 앱의 플랫폼 지원, 둥근 모서리 여백, CI 자동화 및 개인정보 보호 경계를 비교합니다.",
+    "breadcrumb": "iconutil · Image2icon 비교",
+    "eyebrow": "도구 선택 가이드",
+    "title": "PrimalCut vs iconutil CLI & Image2icon",
+    "lead": "작업 흐름에 따라 알맞은 도구가 다릅니다. 세 가지 방식의 강점과 한계를 사실 그대로 정리했습니다.",
+    "tableHead": [
+      "비교 항목",
+      "Apple iconutil CLI",
+      "Image2icon (macOS 앱)",
+      "PrimalCut (브라우저 로컬)"
+    ],
+    "rows": [
+      {
+        "label": "실행 환경 및 접근성",
+        "colA": "macOS 전용. 터미널에서 sips와 .iconset 폴더 구성 필요",
+        "colB": "macOS 네이티브 앱 설치 필요. 일부 형식은 인앱 결제 필요",
+        "colC": "macOS / Windows / Linux 최신 브라우저에서 설치 없이 무료 실행"
+      },
+      {
+        "label": "macOS 모서리 및 안전 여백",
+        "colA": "자동 처리 없음. 디자인 파일이나 스크립트에서 직접 준비해야 함",
+        "colB": "풍부한 내장 템플릿, 프레임, 실시간 미리보기 제공",
+        "colC": "22.37% macOS 둥근 모서리와 120 px 안전 여백을 원클릭 전환"
+      },
+      {
+        "label": "다중 크기 PNG 묶음",
+        "colA": "해상도별로 sips 명령을 실행한 뒤 수동으로 압축해야 함",
+        "colB": "PNG 폴더 및 다양한 데스크톱 아이콘 형식 내보내기 지원",
+        "colC": "확장용 프리셋과 7종 macOS AppIcon 프리셋을 ZIP으로 즉시 다운로드"
+      },
+      {
+        "label": "개인정보 및 데이터 경로",
+        "colA": "로컬 CLI 실행, 오프라인 동작",
+        "colB": "로컬 네이티브 앱 실행, 오프라인 동작",
+        "colC": "브라우저 Canvas와 로컬 메모리에서만 처리, 서버 업로드 없음"
+      },
+      {
+        "label": "CI/CD 대량 자동화",
+        "colA": "최고 수준. Makefile, Xcode, GitHub Actions에 직접 통합 가능",
+        "colB": "폴더 드래그 앤 드롭 기반의 대화형 일괄 처리 지원",
+        "colC": "1개~수십 개 아이콘의 빠른 시각적 변환에 최적화 (CI 스크립트 대체 아님)"
+      },
+      {
+        "label": "추가 형식 (ICO / 폴더 꾸미기)",
+        "colA": ".icns와 .iconset 상호 변환에 집중",
+        "colB": "Finder 폴더 직접 적용, Windows ICO 등 다양한 형식 지원",
+        "colC": "고품질 .icns와 표준 PNG ZIP 세트에 집중해 가벼움 유지"
+      }
+    ],
+    "whenPrimalCutTitle": "PrimalCut이 가장 잘 맞는 경우",
+    "whenPrimalCutItems": [
+      {
+        "bold": "Mac 환경 없이 .icns 파일이 급히 필요할 때",
+        "body": "Windows나 Linux에서 Electron / Tauri 프로젝트를 빌드하면서 즉시 유효한 macOS .icns 아이콘을 만들어야 하는 경우."
+      },
+      {
+        "bold": "꽉 찬 정사각형 PNG를 Dock 규격에 맞추고 싶을 때",
+        "body": "Figma를 열지 않고도 1024 × 1024 원본에 22.37% 둥근 모서리와 120 px 안전 여백을 바로 적용하고 싶은 경우."
+      },
+      {
+        "bold": "비공개 앱 아이콘을 외부 서버에 올리기 꺼려질 때",
+        "body": "아직 출시하지 않은 제품의 아이콘을 외부 변환 서버로 전송하지 않고 내 브라우저 안에서만 안전하게 처리하고 싶은 경우."
+      }
+    ],
+    "whenOtherTitle": "iconutil이나 Image2icon이 더 나은 경우",
+    "whenOtherLead": "두 도구가 분명히 앞서는 영역입니다:",
+    "whenOtherItems": [
+      {
+        "bold": "자동화된 빌드 파이프라인 구축 (iconutil 선택)",
+        "body": "macOS CI 러너에서 소스 이미지를 커맨드라인으로 자동 컴파일해야 한다면 Apple 기본 iconutil + sips가 가장 안정적입니다."
+      },
+      {
+        "bold": "Finder 폴더 아이콘 교체나 입체 프레임 효과 (Image2icon 선택)",
+        "body": "폴더에 아이콘을 끌어다 놓아 바로 적용하거나 다양한 macOS 템플릿 스타일을 쓰고 싶다면 네이티브 앱 Image2icon이 편리합니다."
+      }
+    ],
+    "ctaTitle": "지금 바로 아이콘을 재단해 보세요",
+    "ctaBody": "회원가입 없이 if9가 만든 로컬 변환 엔진을 홈 화면에서 바로 사용할 수 있습니다.",
+    "ctaTryTool": "홈에서 도구 사용하기",
+    "ctaOpenWorkbench": "워크벤치 열기"
+  },
+  "footer": {
+    "moreFromIf9": "if9 의 다른 도구",
+    "vsCompareLink": "iconutil / Image2icon 비교",
+    "workbenchLink": "전용 워크벤치",
+    "privacy": "개인정보 처리방침",
+    "terms": "이용약관",
+    "refund": "환불 정책",
+    "madeBy": "Made by if9",
+    "localTrust": "모든 이미지 처리는 브라우저 로컬에서 완료됩니다"
+  },
+  "common": {
+    "retry": "다시 시도",
+    "cancel": "취소",
+    "save": "저장",
+    "reset": "초기화",
+    "kbUnit": "KB",
+    "mbUnit": "MB"
+  },
+  "errorPage": {
+    "youAreHere": "현재 위치",
+    "notFoundTitle": "페이지를 찾을 수 없습니다",
+    "notFoundDesc": "요청하신 주소가 이동되었거나 잘못되었습니다. PrimalCut 홈으로 돌아가 아이콘 변환을 계속할 수 있습니다.",
+    "crashTitle": "페이지를 불러오는 중 문제가 발생했습니다",
+    "crashDesc": "화면을 렌더링하는 동안 예기치 않은 오류가 발생했습니다. 새로고침하거나 홈으로 이동해 주세요.",
+    "backHome": "홈으로 돌아가기"
+  }
+}

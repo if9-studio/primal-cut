@@ -1,0 +1,258 @@
+{
+  "brand": {
+    "name": "素裁",
+    "latin": "PrimalCut",
+    "tagline": "浏览器本地 PNG 转 macOS .icns 与多尺寸图标工具",
+    "byline": "由 if9 出品"
+  },
+  "nav": {
+    "homeAria": "素裁首页",
+    "mainAria": "主导航",
+    "backHome": "返回首页",
+    "vsCompare": "对比 iconutil / Image2icon",
+    "openWorkbench": "打开专注工作台",
+    "backToSite": "产品首页",
+    "langMenuLabel": "切换界面语言",
+    "settings": "工具设置"
+  },
+  "tool": {
+    "dropTitle": "点击或拖拽 PNG 图片到此处",
+    "dropSubtitle": "仅支持 PNG 格式，单文件上限 {maxMb} MB，全程在浏览器本地完成",
+    "errorNotPng": "请上传 PNG 格式的图片文件（.png）",
+    "errorTooLarge": "文件超过 {maxMb} MB 上限，请压缩后再试",
+    "errorIcnsFailed": "生成 ICNS 失败，请检查 PNG 文件是否完整",
+    "errorConvertFailed": "转换失败，请更换 PNG 文件重试",
+    "clearFile": "清除当前图片",
+    "renameLabel": "输出文件名前缀",
+    "renamePlaceholder": "输入导出的文件名（不含扩展名）",
+    "editNameAria": "编辑输出文件名",
+    "fileMeta": "{width} × {height} px · {kb} KB",
+    "selectedFileCount": "已载入 {count} 个 PNG 源文件",
+    "formatLabel": "选择导出格式",
+    "formatIcnsTitle": "ICNS",
+    "formatIcnsDesc": "macOS .icns 应用图标包",
+    "formatPngTitle": "PNG Set",
+    "formatPngDesc": "多尺寸 PNG 打包为 ZIP",
+    "optionsToggle": "裁切与导出选项",
+    "roundedCorners": "macOS 圆角裁切",
+    "roundedCornersHint": "22.37% 视觉圆角遮罩",
+    "safePadding": "120px 安全边距",
+    "safePaddingHint": "1264 × 1264 标准网格留白",
+    "pngPresetLabel": "PNG 尺寸预设",
+    "presetExtension": "扩展常用（原图 + 16 / 48 / 128 px）",
+    "presetMacApp": "macOS 全套（16 / 32 / 64 / 128 / 256 / 512 / 1024 px）",
+    "pngSizeCount": "本次将打包 {count} 个 PNG 文件",
+    "specTagsTitle": "输出规格",
+    "viewGrid": "卡片预览",
+    "viewList": "清单视图",
+    "convertButton": "开始转换并下载",
+    "convertingButton": "正在本地转换…",
+    "recentTitle": "本次会话导出记录",
+    "queuedCount": "已导出 {count} 个图标包",
+    "clearHistory": "清空记录",
+    "localPrivacyNote": "图像仅在你当前浏览器的 Canvas 与内存中处理，绝不上传至任何服务器。"
+  },
+  "settings": {
+    "title": "工具设置",
+    "subtitle": "自定义工作台语言偏好与默认图标裁切规则",
+    "languageLabel": "工作台界面语言",
+    "languageAuto": "跟随系统",
+    "languageHint": "设为「跟随系统」时优先匹配你的浏览器语言；未收录语种自动回退为 English。公开官网各语言页面仍通过顶部语言切换器访问独立路径。",
+    "defaultsTitle": "默认输出参数",
+    "close": "完成"
+  },
+  "landing": {
+    "metaTitle": "素裁 PrimalCut — 在线免费 PNG 转 macOS .icns 图标生成器",
+    "metaDescription": "素裁（PrimalCut）是一款纯浏览器本地运行的 PNG 转 macOS .icns 与多尺寸 PNG ZIP 生成工具。自动应用 22.37% macOS 圆角、120px 安全边距与双三次插值，图像零上传。",
+    "heroBadge": "100% 本地处理 · 无需安装 · 零上传",
+    "heroTitle": "优雅的 macOS .icns 与多尺寸图标裁切工具",
+    "heroSubtitle": "拖入一张高分辨率 PNG，几秒内生成符合 macOS 桌面比例的 .icns 图标包或标准尺寸 PNG 压缩包——全程运行于浏览器本地。",
+    "privacyBadge": "纯浏览器 Canvas + png2icons 引擎",
+    "specsTitle": "专为 macOS 与独立开发者打磨的图标细节",
+    "specsLead": "直接把设计师给的正方形封面或应用截图变成可放进 Finder「显示简介」、Xcode 或 Electron 打包脚本的标准图标。",
+    "specs": [
+      {
+        "tag": "安全边距",
+        "title": "1264 × 1264 标准网格留白",
+        "desc": "先将原图等比缩放至 1024 × 1024，并在四周留出 120 px 透明安全边距，使应用图标在 Dock 栏与应用程序目录中与系统原生图标保持一致视觉体量。"
+      },
+      {
+        "tag": "圆角几何",
+        "title": "22.37% macOS 柔和圆角",
+        "desc": "采用 destination-in 合成遮罩按 22.37% 比例裁切四角，避免简单 clip 裁切带来的暗色锯齿边缘。"
+      },
+      {
+        "tag": "双三次插值",
+        "title": "高保真多分辨率 .icns 封包",
+        "desc": "通过浏览器端 png2icons 双三次（Bicubic）重采样算法一次性输出包含多种 Retina 分辨率的标准 .icns 文件。"
+      },
+      {
+        "tag": "多尺寸 ZIP",
+        "title": "一键打包扩展与 AppIcon PNG",
+        "desc": "支持导出含原图与 16 / 48 / 128 px 的轻量图标包，或直接生成 16 至 1024 px 完整 7 档尺寸集合。"
+      }
+    ],
+    "workflowTitle": "三步完成图标制作",
+    "workflowLead": "无需打开命令行终端，也不用配置 .iconset 文件夹。",
+    "steps": [
+      {
+        "num": "01",
+        "title": "载入 PNG 源文件",
+        "desc": "推荐上传 1024 × 1024 以上的方形透明 PNG 图片，浏览器会即时读取像素尺寸与体积。"
+      },
+      {
+        "num": "02",
+        "title": "选择格式与裁切参数",
+        "desc": "按需开启 macOS 22.37% 圆角与 120px 安全边距，或切换为多尺寸 PNG ZIP 预设。"
+      },
+      {
+        "num": "03",
+        "title": "本地生成并即时下载",
+        "desc": "点击转换按钮，浏览器直接合成二进制 .icns 或 .zip 文件并触发下载。"
+      }
+    ],
+    "faqTitle": "常见问题",
+    "faqLead": "关于 macOS .icns 规范、安全边距与浏览器本地处理的解答。",
+    "faqItems": [
+      {
+        "q": "为什么素裁默认在 1024 × 1024 图标外增加 120 px 安全边距？",
+        "a": "在 macOS Big Sur 及后续版本中，系统要求应用图标主体处于 1024 画布内约 824 × 824 的视觉网格中。素裁在 1264 × 1264 画布里保留 120 px 外圈留白，使成品放入 Dock 时不会显得比系统原生图标大一圈。"
+      },
+      {
+        "q": "我的 PNG 图片会被上传到服务器吗？",
+        "a": "不会。所有缩放、圆角遮罩、双三次插值与 ZIP 压缩都完全在你本地浏览器的 Canvas 与 JavaScript 内存中完成，网络断开后依然可正常运行当前页面上的转换。"
+      },
+      {
+        "q": "为什么要使用 22.37% 比例的圆角？",
+        "a": "22.37% 是 macOS 桌面图标标准的圆角半径比例。如果你的原图已经是带透明底的圆角图标或异形轮廓，也可以在工具「裁切与导出选项」里关闭自动圆角和边距。"
+      },
+      {
+        "q": "ICNS 和 PNG Set 两种导出格式有什么区别？",
+        "a": "ICNS 是 macOS 专用的多分辨率图标容器，可直接用于应用打包（Xcode / Tauri / Electron）或通过 Finder「显示简介」替换文件夹图标；PNG Set 则将多个标准像素尺寸打包为 ZIP，适合浏览器扩展、网页 Favicon 或图标素材交付。"
+      },
+      {
+        "q": "生成的 .icns 支持哪些浏览器与操作系统？",
+        "a": "只要使用现代桌面浏览器（Chrome、Safari、Edge、Firefox），无论你当前在 macOS、Windows 还是 Linux 上，都能直接生成标准 .icns 文件供 Mac 构建或分发使用。"
+      },
+      {
+        "q": "有文件体积或格式限制吗？",
+        "a": "为了保证浏览器内存转换流畅稳定，目前限制单个源图片为 PNG 格式且不超过 10 MB，建议尺寸为 1024 × 1024 px。"
+      }
+    ],
+    "compareCalloutTitle": "素裁 vs macOS iconutil 命令行与 Image2icon",
+    "compareCalloutBody": "不确定该用浏览器工具、苹果官方 CLI 脚本还是原生桌面应用？查看三种方案的客观边界对比。",
+    "compareCalloutCta": "阅读完整对比",
+    "workbenchCalloutTitle": "需要无干扰全屏界面？",
+    "workbenchCalloutBody": "进入纯工具工作台，专注连续处理多张图标并保留本次会话导出列表。",
+    "workbenchCalloutCta": "打开工作台"
+  },
+  "vsCompare": {
+    "metaTitle": "素裁 vs iconutil 命令行与 Image2icon — macOS 图标工具客观对比",
+    "metaDescription": "客观对比素裁（PrimalCut）、Apple 官方 iconutil 命令行以及 Image2icon 桌面软件在跨平台可用性、圆角边距、批量自动化与隐私边界上的差异。",
+    "breadcrumb": "对比 iconutil 与 Image2icon",
+    "eyebrow": "工具选型指南",
+    "title": "素裁 vs iconutil 命令行与 Image2icon",
+    "lead": "不同工作流适合不同的图标生成方式。这里直接列出三者的能力边界，帮你按实际场景挑选最顺手的一环。",
+    "tableHead": [
+      "对比维度",
+      "Apple iconutil CLI",
+      "Image2icon（桌面端）",
+      "素裁 PrimalCut（网页本地）"
+    ],
+    "rows": [
+      {
+        "label": "运行环境与门槛",
+        "colA": "仅限 macOS，需配合 sips 与终端脚本手动构建 .iconset 目录",
+        "colB": "仅限 macOS 原生安装桌面客户端，部分导出格式需内购解锁",
+        "colC": "macOS / Windows / Linux 任意现代浏览器打开即用，免费免安装"
+      },
+      {
+        "label": "macOS 圆角与安全边距",
+        "colA": "不自动处理圆角与留白，需自行在设计稿或脚本中裁切",
+        "colB": "提供丰富的内置模板与预览，支持多种相框和样式",
+        "colC": "一键开启或关闭 22.37% macOS 圆角与 120 px 标准安全边距"
+      },
+      {
+        "label": "多尺寸 PNG 打包",
+        "colA": "需编写多条 sips 缩放命令再自行压缩归档",
+        "colB": "支持导出 PNG 文件夹与多种桌面图标格式",
+        "colC": "内置浏览器扩展预设与 macOS 7 档尺寸预设，直接下载 ZIP"
+      },
+      {
+        "label": "隐私与文件去向",
+        "colA": "纯本机命令行运行，离线可用",
+        "colB": "纯本机原生应用运行，离线可用",
+        "colC": "纯浏览器 Canvas 与内存计算，图像零上传服务器"
+      },
+      {
+        "label": "CI/CD 与大批量自动化",
+        "colA": "极佳，可直接写进 Makefile、Xcode 或 GitHub Actions",
+        "colB": "支持拖拽批处理文件夹，偏交互式桌面体验",
+        "colC": "适合单张到数十张的快速图形化转换，不替代终端 CI 脚本"
+      },
+      {
+        "label": "ICO / 文件夹换肤等扩展格式",
+        "colA": "仅专注 .icns 与 .iconset 互转",
+        "colB": "支持直接拖拽给 Finder 文件夹换图标、Windows ICO 等更多格式",
+        "colC": "专注高保真 macOS .icns 与常用标准 PNG Set，保持轻量克制"
+      }
+    ],
+    "whenPrimalCutTitle": "什么时候优先用素裁",
+    "whenPrimalCutItems": [
+      {
+        "bold": "不想配环境、跨系统临时出图",
+        "body": "在 Windows、Linux 或未安装 Xcode 的设备上开发 Electron / Tauri / Web 项目，急需一枚标准的 .icns 文件。"
+      },
+      {
+        "bold": "原图满画布需要快速加 macOS 圆角和留白",
+        "body": "手头只有一张 1024 × 1024 直角海报或网页截图，希望一键贴合 macOS 桌面规范而不必启动 Figma。"
+      },
+      {
+        "bold": "对隐私敏感的未发布产品图标",
+        "body": "不愿把尚未公开的新 App 图标上传给来路不明的在线转码站，素裁全程在浏览器本地执行计算。"
+      }
+    ],
+    "whenOtherTitle": "什么时候更适合用 iconutil 或 Image2icon",
+    "whenOtherLead": "坦诚说明另两款工具的不可替代之处：",
+    "whenOtherItems": [
+      {
+        "bold": "需要接入自动化构建流水线（选 iconutil）",
+        "body": "如果你的项目必须在 CI 脚本里通过命令行批量把设计源文件编译为 .icns，Apple 自带的 iconutil + sips 最稳定。"
+      },
+      {
+        "bold": "需要给大量 Finder 文件夹换封面或输出复杂材质相框（选 Image2icon）",
+        "body": "Image2icon 是优秀的 macOS 原生应用，适合桌面美化重度用户、需要快速给磁盘/文件夹直接应用图标的场景。"
+      }
+    ],
+    "ctaTitle": "现在就试着切一枚图标",
+    "ctaBody": "无需注册，由 if9 打造的纯本地转换引擎就在首页，拖入 PNG 即可体验。",
+    "ctaTryTool": "前往首页使用工具",
+    "ctaOpenWorkbench": "进入工作台"
+  },
+  "footer": {
+    "moreFromIf9": "更多 if9 工具",
+    "vsCompareLink": "对比 iconutil / Image2icon",
+    "workbenchLink": "纯工具工作台",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "refund": "退款政策",
+    "madeBy": "由 if9 出品",
+    "localTrust": "所有图片处理均在本地浏览器完成"
+  },
+  "common": {
+    "retry": "重试",
+    "cancel": "取消",
+    "save": "保存",
+    "reset": "恢复默认",
+    "kbUnit": "KB",
+    "mbUnit": "MB"
+  },
+  "errorPage": {
+    "youAreHere": "你在这里",
+    "notFoundTitle": "页面不存在",
+    "notFoundDesc": "当前访问的地址可能已移动或输入有误，你可以回到素裁首页继续转换图标。",
+    "crashTitle": "页面加载遇到一点状况",
+    "crashDesc": "渲染当前视图时发生了意外，请刷新重试或返回首页。",
+    "backHome": "回到首页"
+  }
+}
